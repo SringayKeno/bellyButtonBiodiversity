@@ -123,10 +123,11 @@ function init() {
       // 2. Create the layout for the bubble chart.
       var bubbleLayout = {
         title: 'Bacteria Cultures Per Sample',
-        xaxis: {title: "OTU ID" },
+        xaxis: {title: "Operational Taxonomic Unit (OTU ID)"},
+        yaxis: {title: "Sample Values"},
         showlegend: false,
-        plot_bgcolor:"##c6e2f9",
-        paper_bgcolor:"#c6e2f9"
+        plot_bgcolor:"#white",
+        paper_bgcolor:"#90CAF9",
         // height: 500,
         // width: 900
       };
@@ -175,13 +176,13 @@ function init() {
         value: washing_freq,
         gauge: {
           axis: { range: [null, 10]}, 
-          bar: { color: "black"},
+          bar: { color: "white"},
           steps: [
-            { range: [0, 2], color: "red"},
-            { range: [2, 4], color: "orange"},
-            { range: [4, 6], color: "yellow"},
-            { range: [6, 8], color: "lawngreen"},
-            { range: [8, 10], color: "green"}
+            { range: [0, 2], color: "64B5F6"},
+            { range: [2, 4], color: "#2196F3"},
+            { range: [4, 6], color: "1976D2"},
+            { range: [6, 8], color: "1565C0"},
+            { range: [8, 10], color: "0D47A1"}
           ]}
       }
       ];
